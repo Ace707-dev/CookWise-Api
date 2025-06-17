@@ -14,15 +14,15 @@ final class Usuario: @unchecked Sendable, Model, Content {
     @Field(key: "email")
     var email: String
 
-    @Field(key: "passwordHash")
-    var passwordHash: String
+    @Field(key: "contraseña")
+    var contraseña: String
 
     init() {}
 
-    init(id: UUID? = nil, usuario: String, email: String, passwordHash: String) {
+    init(id: UUID? = nil, usuario: String, email: String, contraseña: String) {
         self.id = id
         self.usuario = usuario
         self.email = email
-        self.passwordHash = passwordHash
+        self.contraseña = contraseña
     }
 }

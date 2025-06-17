@@ -6,7 +6,7 @@ struct CreateUsuario: Migration {
             .id()
             .field("usuario", .string, .required)
             .field("email", .string, .required)
-            .field("passwordHash", .string, .required)
+            .field("contraseña", .string, .required)
             .create()
     }
 

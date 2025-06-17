@@ -1,7 +1,8 @@
 import Fluent
+import Vapor
 
 
-final class RecetaIngrediente:@unchecked Sendable, Model {
+final class RecetaIngrediente:@unchecked Sendable, Model, Content {
     static let schema = "receta_ingrediente"
     
     @ID(key: .id) var id: UUID?
@@ -11,4 +12,12 @@ final class RecetaIngrediente:@unchecked Sendable, Model {
     @Field(key: "unidad_medida") var unidadMedida: String  
     
     init() {}
+    
+    init(id: UUID? = nil, recetaID: UUID, ingredienteID: UUID, cantidad: Int, unidadMedida: String) {
+        self.id = id
+        self.$receta.id = recetaID
+        self.$ingrediente.id = ingredienteID
+        self.cantidad = cantidad
+        self.unidadMedida = unidadMedida
+    }
 }

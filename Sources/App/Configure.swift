@@ -16,6 +16,7 @@ public func configure(_ app: Application) throws {
     app.migrations.add(CreateIngrediente())
     app.migrations.add(CreateRecetaIngrediente())
     app.migrations.add(CreateFavorito())  
+    app.migrations.add(SeedDatabase())
 
     try app.autoMigrate().wait() 
     try routes(app)
