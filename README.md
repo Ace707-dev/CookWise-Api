@@ -1,9 +1,21 @@
 ﻿# cookWise-api
-CookWise es un recetario digital, que ofrece una comunidad llena de recetas para tu dia a dia
+CookWise es una API RESTful diseñada para alimentar una aplicación de recetario inteligente. Su objetivo es permitir a los usuarios gestionar sus recetas personales, ingredientes y favoritos, facilitando la planificación de comidas en función de lo que ya tienen en casa.
 
-CookWise API 
+El proyecto está construido con el lenguaje Swift usando el framework Vapor para el backend, y utiliza MySQL como sistema de base de datos relacional con soporte de Fluent ORM para el manejo de modelos y migraciones.
 
-CookWise es una API RESTful desarrollada en Swift usando el framework Vapor. Permite gestionar un recetario inteligente, con funciones para usuarios, recetas, ingredientes, relaciones entre ellos y favoritos. 
+Entre sus funcionalidades destacan:
+
+Registro y gestión de usuarios.
+
+Creación, edición y consulta de recetas detalladas.
+
+Asociación dinámica de ingredientes a recetas.
+
+Marcado de recetas favoritas.
+
+Consulta de recetas a partir de ingredientes disponibles (implementable).
+
+Este proyecto representa una solución modular, escalable y moderna para el manejo digital de recetas, con un enfoque práctico y extensible para futuras funcionalidades como filtros por dificultad, búsqueda por ingredientes, y recomendación de recetas.
 
 Tecnologías utilizadas 
 
@@ -107,8 +119,9 @@ Despliegue
 
 Esta API puede desplegarse en un droplet de DigitalOcean con MySQL instalado. Alternativamente, puedes contenerizarla usando Docker. 
 
-Autor: 
+Autores: 
 
-Andrés Aguilera Hernández 
+Andrés Aguilera Hernández
+Joaquín Alejandro Valois Ruiz
 
  
