@@ -30,6 +30,7 @@ MySQL
 Docker (opcional) 
 
 Desplegado en DigitalOcean 
+IP asignada: https://cookwiseapi123.duckdns.org/
 
 Instalación 
 
